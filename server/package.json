@@ -4,9 +4,11 @@
   "description": "NASA Mission Control API",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "cluster": "pm2 start src/server.js -i max -l logs.txt"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,9 @@
     "express": "^4.18.1",
     "morgan": "^1.10.0",
     "nasa-project": "file:.."
+  },
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "supertest": "^6.2.4"
   }
 }
