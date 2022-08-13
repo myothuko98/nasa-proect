@@ -1,6 +1,6 @@
 # NASA Project
 
-NASA Rocket Launches Plan and History with MongoDB and Express
+NASA Rocket Launches Plan and History with MongoDB, Express, React and Node ( MERN )
 
 Referenced from My planets-project and SpaceX RESTAPI( V5 )
 
